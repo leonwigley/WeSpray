@@ -1,7 +1,7 @@
 body {
   font-family: 'Quicksand', sans-serif;
   color: #252525;
-  font-size: 15px;
+  font-size: 18px;
 }
 
 a {
@@ -16,11 +16,17 @@ a:hover {
 
 h1 {
   font-family: 'League Spartan', sans-serif;
-  font-weight: 700;
-  font-size: 25px;
+  font-weight: 800;
+  font-size: 35px;
 }
 
-h2,
+h2 {
+  font-family: 'League Spartan', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #252525;
+}
+
 h3,
 h4,
 h5,
@@ -140,7 +146,7 @@ h6 {
 }
 
 #header .logo img {
-  max-height: 50px;
+  max-height: 75px;
 }
 
 @media (max-width: 992px) {
@@ -236,6 +242,7 @@ h6 {
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
+  font-size: 30px;
   color: #ee6300;
   cursor: pointer;
   display: none;
@@ -357,23 +364,12 @@ h6 {
   margin-top: 150px;
 }
 
-#hero h1 {
+#hero h2 {
   margin: 0;
-  font-weight: 500;
-  line-height: 50px;
   padding: 0px;
   margin-bottom: 50px;
-  color: #252525;
 }
 
-#hero h2 {
-  color: #505050;
-  margin: 0;
-  font-weight: 500;
-  line-height: 50px;
-  padding: 0px 200px;
-  color: #505050;
-}
 
 #hero .btn-get-started {
   font-weight: 500;
@@ -406,12 +402,8 @@ h6 {
   z-index: 1;
 }
 
-#hero .icon-box .title {
-  font-weight: 700;
-}
-
 #hero .icon-box .title a {
-  color: #572400;
+  color: #ee6300;
   transition: 0.3s;
 }
 
@@ -507,6 +499,10 @@ section {
 --------------------------------------------------------------*/
 #about {
   margin: 0;
+}
+
+#about h1 {
+  color: #ee6300;
 }
 
 .about .content h3 {
