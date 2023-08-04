@@ -1,17 +1,7 @@
-/**
-* Template Name: OnePage
-* Updated: Jul 27 2023 with Bootstrap v5.3.1
-* Template URL: https://bootstrapmade.com/onepage-multipurpose-bootstrap-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# General
---------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: #252525;
+  font-size: 15px;
 }
 
 a {
@@ -24,19 +14,28 @@ a:hover {
   text-decoration: none;
 }
 
-h1,
+h1 {
+  font-family: 'League Spartan', sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+}
+
 h2,
 h3,
 h4,
 h5,
 h6 {
-  font-family: "Raleway", sans-serif;
+  font-family: 'League Spartan', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #505050;
 }
 
 /*--------------------------------------------------------------
 # Back to top button
 --------------------------------------------------------------*/
 .back-to-top {
+  font-size: 20px;
   position: fixed;
   visibility: hidden;
   opacity: 0;
@@ -51,7 +50,6 @@ h6 {
 }
 
 .back-to-top i {
-  font-size: 28px;
   color: #fff;
   line-height: 0;
 }
@@ -130,29 +128,19 @@ h6 {
 }
 
 #header .logo {
-  font-size: 25px;
   margin: 0;
   padding: 0;
   line-height: 1;
   font-weight: 800;
   letter-spacing: 0.5px;
-  font-family: "Poppins", sans-serif;
 }
 
 #header .logo a {
   color: #505050;
 }
 
-#header .logominitext {
-  font-size: 10px;
-}
-
-#header .logo p {
-  font-size: 10px;
-}
-
 #header .logo img {
-  max-height: 40px;
+  max-height: 50px;
 }
 
 @media (max-width: 992px) {
@@ -177,6 +165,28 @@ h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  gap: 2rem;
+}
+
+.calendly {
+  display: flex;
+  margin: 25px 0px;
+}
+
+.calendlybtn {
+  background: #ee6300;
+  padding: 8px 20px;
+  border-radius: 4px;
+  font-weight: 800;
+  text-transform: uppercase;
+  color: #ffff !important;
+}
+
+.calendlybtn:hover {
+  background: #EE6300B5;
+  padding: 8px 20px;
+  border-radius: 4px;
+  color: #ffff !important;
 }
 
 .navbar li {
@@ -188,8 +198,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
-  font-size: 14px;
+  padding-block: 10px;
   color: #252525;
   white-space: nowrap;
   transition: 0.3s;
@@ -197,7 +206,6 @@ h6 {
 
 .navbar a i,
 .navbar a:focus i {
-  font-size: 12px;
   line-height: 0;
   margin-left: 5px;
 }
@@ -229,7 +237,6 @@ h6 {
 */
 .mobile-nav-toggle {
   color: #ee6300;
-  font-size: 28px;
   cursor: pointer;
   display: none;
   line-height: 0;
@@ -284,7 +291,6 @@ h6 {
 .navbar-mobile a,
 .navbar-mobile a:focus {
   padding: 10px 20px;
-  font-size: 15px;
   color: #ee6300b5;
 }
 
@@ -317,10 +323,6 @@ h6 {
 
 .navbar-mobile .dropdown ul a {
   padding: 10px 20px;
-}
-
-.navbar-mobile .dropdown ul a i {
-  font-size: 12px;
 }
 
 .navbar-mobile .dropdown ul a:hover,
@@ -357,23 +359,24 @@ h6 {
 
 #hero h1 {
   margin: 0;
-  font-size: 25px;
   font-weight: 500;
-  line-height: 72px;
+  line-height: 50px;
+  padding: 0px;
+  margin-bottom: 50px;
   color: #252525;
-  font-family: "Poppins", sans-serif;
 }
 
 #hero h2 {
-  color: #5e5e5e;
-  margin: 10px 0 0 0;
-  font-size: 22px;
+  color: #505050;
+  margin: 0;
+  font-weight: 500;
+  line-height: 50px;
+  padding: 0px 200px;
+  color: #505050;
 }
 
 #hero .btn-get-started {
-  font-family: "Poppins", sans-serif;
   font-weight: 500;
-  font-size: 14px;
   letter-spacing: 0.5px;
   display: inline-block;
   padding: 14px 50px;
@@ -389,7 +392,7 @@ h6 {
 }
 
 #hero .icon-boxes {
-  margin-top: 100px;
+  margin-top: 25px;
 }
 
 #hero .icon-box {
@@ -405,7 +408,6 @@ h6 {
 
 #hero .icon-box .title {
   font-weight: 700;
-  font-size: 18px;
 }
 
 #hero .icon-box .title a {
@@ -414,7 +416,6 @@ h6 {
 }
 
 #hero .icon-box .description {
-  font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
 }
@@ -424,7 +425,6 @@ h6 {
   padding-top: 10px;
   display: inline-block;
   transition: all 0.3s ease-in-out;
-  font-size: 36px;
   line-height: 1;
   color: #ee6300;
 }
@@ -463,12 +463,10 @@ h6 {
   }
 
   #hero h1 {
-    font-size: 28px;
     line-height: 36px;
   }
 
   #hero h2 {
-    font-size: 18px;
     line-height: 24px;
   }
 
@@ -481,11 +479,10 @@ h6 {
 # Sections General
 --------------------------------------------------------------*/
 section {
-  margin: 80px 0;
+  margin: 50px 0px;
+  padding: 0;
   overflow: hidden;
 }
-
-.section-bg {}
 
 .section-title {
   text-align: center;
@@ -493,7 +490,6 @@ section {
 }
 
 .section-title h2 {
-  font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -503,7 +499,6 @@ section {
 
 .section-title p {
   margin-bottom: 0;
-  font-size: 14px;
   color: #919191;
 }
 
@@ -511,13 +506,11 @@ section {
 # About
 --------------------------------------------------------------*/
 #about {
-  padding-top: 50px;
   margin: 0;
 }
 
 .about .content h3 {
   font-weight: 600;
-  font-size: 26px;
 }
 
 .about .content ul {
@@ -538,7 +531,6 @@ section {
   position: absolute;
   left: 0;
   top: 2px;
-  font-size: 20px;
   color: #ee6300;
   line-height: 1;
 }
@@ -548,9 +540,7 @@ section {
 }
 
 .about .content .btn-learn-more {
-  font-family: "Raleway", sans-serif;
   font-weight: 600;
-  font-size: 14px;
   letter-spacing: 1px;
   display: inline-block;
   padding: 12px 32px;
@@ -590,14 +580,12 @@ section {
 }
 
 .testimonials .testimonial-item h3 {
-  font-size: 18px;
   font-weight: bold;
   margin: 10px 0 5px 0;
   color: #111;
 }
 
 .testimonials .testimonial-item h4 {
-  font-size: 14px;
   color: #999;
   margin: 0;
 }
@@ -605,7 +593,6 @@ section {
 .testimonials .testimonial-item .quote-icon-left,
 .testimonials .testimonial-item .quote-icon-right {
   color: #c9e3f5;
-  font-size: 26px;
 }
 
 .testimonials .testimonial-item .quote-icon-left {
@@ -672,7 +659,6 @@ section {
 
 #cta h1 {
   color: #fff;
-  font-size: 25px;
   font-weight: 800;
 }
 
@@ -689,7 +675,6 @@ section {
 }
 
 .contact .info i {
-  font-size: 20px;
   color: #ee6300;
   float: left;
   width: 44px;
@@ -704,7 +689,6 @@ section {
 
 .contact .info h4 {
   padding: 0 0 0 60px;
-  font-size: 22px;
   font-weight: 600;
   margin-bottom: 5px;
   color: #ee6300;
@@ -713,7 +697,6 @@ section {
 .contact .info p {
   padding: 0 0 0 60px;
   margin-bottom: 0;
-  font-size: 14px;
   color: #252525;
 }
 
@@ -783,7 +766,6 @@ section {
 .contact .php-email-form textarea {
   border-radius: 0;
   box-shadow: none;
-  font-size: 14px;
   border-radius: 4px;
 }
 
@@ -828,7 +810,6 @@ section {
 --------------------------------------------------------------*/
 #footer {
   color: #444444;
-  font-size: 14px;
   background: #f8fbfe;
   box-shadow: 0px 2px 15px rgba(18, 66, 101, 0.08);
 }
@@ -843,7 +824,6 @@ section {
 }
 
 #footer .footer-top .footer-contact h3 {
-  font-size: 26px;
   margin: 0 0 10px 0;
   padding: 2px 0 2px 0;
   line-height: 1;
@@ -851,15 +831,12 @@ section {
 }
 
 #footer .footer-top .footer-contact p {
-  font-size: 14px;
   line-height: 24px;
   margin-bottom: 0;
-  font-family: "Raleway", sans-serif;
   color: #777777;
 }
 
 #footer .footer-top h4 {
-  font-size: 16px;
   font-weight: bold;
   color: #252525;
   position: relative;
@@ -879,7 +856,6 @@ section {
 #footer .footer-top .footer-links ul i {
   padding-right: 2px;
   color: #ee6300;
-  font-size: 18px;
   line-height: 1;
 }
 
@@ -905,12 +881,7 @@ section {
   color: #ee6300;
 }
 
-#footer .footer-newsletter {
-  font-size: 15px;
-}
-
 #footer .footer-newsletter h4 {
-  font-size: 16px;
   font-weight: bold;
   color: #444444;
   position: relative;
@@ -940,7 +911,6 @@ section {
   bottom: -1px;
   border: 0;
   background: none;
-  font-size: 16px;
   padding: 0 20px 2px 20px;
   background: #ee6300;
   color: #fff;
@@ -955,27 +925,21 @@ section {
 
 #footer .credits {
   padding-top: 5px;
-  font-size: 13px;
   color: #444444;
 }
 
 #footer .social-links a {
-  font-size: 18px;
-  display: inline-block;
   background: #ee6300;
-  color: #fff;
-  line-height: 1;
-  padding: 8px 0;
-  margin-right: 4px;
+  color: #FFFF;
+  font-size: 30px;
+  margin: 0 5px;
+  padding: 0px 5px;
+  padding-top: 5px;
+  padding-bottom: 2px;
   border-radius: 5px;
-  text-align: center;
-  width: 36px;
-  height: 36px;
   transition: 0.3s;
 }
 
 #footer .social-links a:hover {
   background: #EE6300B5;
-  color: #fff;
-  text-decoration: none;
 }

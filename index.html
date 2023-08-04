@@ -25,8 +25,10 @@
     <link href="assets/img/icon.png" rel="apple-touch-icon" sizes="128x128">
 
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&family=Quicksand:wght@300;400;700&display=swap"
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
@@ -48,7 +50,9 @@
     <header id="header" class="fixed-top">
         <div class="container d-flex align-items-center justify-content-between">
 
-            <a href="index.html" class="logo"><img src="/assets/img/WeSpray.svg" alt="" class="img-fluid"></a>
+            <a href="index.html" class="logo">
+                <img src="/assets/img/logo.png">
+            </a>
 
             <nav id="navbar" class="navbar">
                 <ul>
@@ -56,6 +60,14 @@
                     <li><a class="nav-link scrollto" href="#services">Services</a></li>
                     <li><a class="nav-link scrollto" href="#about">About</a></li>
                     <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+                    <!-- Calendly link widget begin -->
+                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
+                        async></script>
+                    <a href=""
+                        onclick="Calendly.initPopupWidget({url: 'https:www.calendly.com/wespray/spray-quote'});return false;"
+                        class="calendlybtn">Book your free quote</a>
+                    <!-- Calendly link widget end -->
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
@@ -78,13 +90,10 @@
                         </div>
                     </div>
 
-                    <h1>We are specialists in spray coatings for commercial and residential buildings.</h1>
-
+                    <h1>We are specialists in spray coatings for commercial and residential buildings based in the North
+                        East, England.</h1>
+                    <h2>Take a look at our services:</h2>
                 </div>
-            </div>
-
-            <div class="text-center">
-                <a href="#about" class="btn-get-started scrollto">Get Started</a>
             </div>
 
             <div id="services" class="row icon-boxes">
@@ -148,13 +157,13 @@
                             Our spray-painting services are designed to provide high-quality and long-lasting finishes
                             for a variety of surfaces such as:
                             <br><br>
-                            <i class="ri-check-double-line"></i> Interior & exterior walls
+                            &#8226; Interior & exterior walls
                             <br>
-                            <i class="ri-check-double-line"></i> Furniture
+                            &#8226; Furniture
                             <br>
-                            <i class="ri-check-double-line"></i> Kitchen Cupboards
+                            &#8226; Kitchen Cupboards
                             <br>
-                            <i class="ri-check-double-line"></i> UPVC (doors, window frames & facias)
+                            &#8226; UPVC (doors, window frames & facias)
                             <br><br>
                             We specialise in spray-painting both
                             internal and external surfaces for commercial and residential buildings.
@@ -162,7 +171,7 @@
                             Whether you're looking to update your bedroom, kitchen cabinets or give your home a
                             fresh new look, we will make sure you get a flawless finish.
                         </p>
-                        <a href="#contact" class="btn-learn-more">Learn More</a>
+                        <!--LINK TO PORTFOLIO WHEN AVAILABLE<a href="#PORTFOLIO" class="btn-learn-more">Learn More</a>-->
                     </div>
                 </div>
 
@@ -210,23 +219,21 @@
                                 <p>+44 07 802 632 788</p>
                             </div>
 
+                            <div class="calendly">
+                                <!-- Calendly link widget begin -->
+                                <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+                                <script src="https://assets.calendly.com/assets/external/widget.js"
+                                    type="text/javascript" async></script>
+                                <a href=""
+                                    onclick="Calendly.initPopupWidget({url: 'https:www.calendly.com/wespray/spray-quote'});return false;"
+                                    class="calendlybtn">Book your free quote</a>
+                                <!-- Calendly link widget end -->
+                            </div>
                         </div>
-
                     </div>
-
-                    <!-- Calendly badge widget begin -->
-                    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-                    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript"
-                        async></script>
-                    <script
-                        type="text/javascript">window.onload = function () { Calendly.initBadgeWidget({ url: 'https://calendly.com/wespray/spray-quote?text_color=252525&primary_color=ee6300', text: 'Book your free quote!', color: '#ee6300', textColor: '#ffffff', branding: false }); }</script>
-                    <!-- Calendly badge widget end -->
-
                 </div>
-
             </div>
         </section><!-- End Contact Section -->
-
     </main><!-- End #main -->
 
     <!-- ======= Footer ======= -->
@@ -237,7 +244,7 @@
                 <div class="row">
 
                     <div class="col-lg-3 col-md-6 footer-contact">
-                        <h3>WeSpray</h3>
+                        <img src="/assets/img/icon.png" width="50px" height="auto" style="padding-bottom: 10px;">
                         <p>
                             North East,<br>
                             England.<br><br>
@@ -256,15 +263,6 @@
                             <li><i class="bx bx-chevron-right"></i> <a href="#services">Kitchen cupboards</a></li>
                         </ul>
                     </div>
-
-                    <div class="col-lg-4 col-md-6 footer-newsletter">
-                        <h4>Join Our Newsletter</h4>
-                        <p>If you would like to keep up to date with our projects, join the newsletter.</p>
-                        <form action="" method="post">
-                            <input type="email" name="email"><input type="submit" value="Subscribe">
-                        </form>
-                    </div>
-
                 </div>
             </div>
         </div>
@@ -280,9 +278,8 @@
                 </div>
             </div>
             <div class="social-links text-center text-md-right pt-3 pt-md-0">
-                <a href="https://www.facebook.com/profile.php?id=100095106610339" class="facebook"><i
-                        class="bx bxl-facebook"></i></a>
-                <a href="https://www.instagram.com/we_spray.uk/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100095106610339"><i class="bx bxl-facebook"></i></a>
+                <a href="https://www.instagram.com/we_spray.uk/"><i class="bx bxl-instagram"></i></a>
             </div>
         </div>
     </footer><!-- End Footer -->
